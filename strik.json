@@ -1,0 +1,24 @@
+ [
+
+     {
+         "strik": "trøje",
+         "farve": "grå",
+         "sværhed": "nem",
+         "garn": "mohair"
+            },
+
+     {
+         "strik": "hue",
+         "farve": "sort",
+         "sværhed": "svær",
+         "garn": "uld"
+            },
+
+     {
+         "strik": "sokker",
+         "farve": "multi",
+         "sværhed": "middel",
+         "garn": "uld"
+            }
+
+        ]

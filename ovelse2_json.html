@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <main>
+        <section class="data_container"></section>
+        <template>
+            <article id="strik">
+                <img src="" alt="">
+                <h3 id="overskrift"></h3>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+            </article>
+        </template>
+    </main>
+
+    <script>
+        let containter = document.querySelector("section");
+        let temp = document.querySelector("template");
+
+        const fil = "strik.json";
+
+        async function hentdata(fil) {
+            const result = await fetch(fil);
+            const json = await result.json();
+            vis(json);
+        }
+
+
+        function vis(json) {
+            const beholder = document.querySelector("main");
+            const skabelon = document.querySelector("template");
+            json.forEach(strik => {
+                const klon = skabelon.cloneNode(true).conten;
+                klon.querySelector("#overskrift").textContent = strik.strik;
+                klon.querySelector("#p1").textContent = strik.farve;
+                klon.querySelector("#p2").textContent = strik.sværhed;
+                klon.querySelector("#p3").textContent = strik.garn;
+                container.appendChild(klon);
+            })
+        }
+        hentdata(fil);
+    </script>
+
+</body></html>

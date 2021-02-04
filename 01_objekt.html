@@ -5,88 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
-</head>
-
-<body>
-    <article id="dyr">
-
-        <h3></h3>
-        <p></p>
-        <img src="" alt="">
-
-        <section id="liste"></section>
 
 
-    </article>
-
-
-    <script>
-        const dyret = {
-            "navn": "Grid",
-            "type": "Pattedye",
-            "billede": "http://mabe-kea.dk/E19/pics/pig.png",
-            "levested": "svinefarm"
-        }
-
-        const destination = document.querySelector("#liste");
-        const dyr = `${dyr.navn} ${dyr.type} ${dyr.levested}`;
-
-        console.log(Dyr: $ {
-            dyr.Dyr
-        }, Type: $ {
-            dyr.Type
-        }, Levested: $ {
-            dyr.Levested
-        })
-
-        //        console.log(destination.querySelector("h3").textContent = dyr; destination.querySelector("p").textContent = dyr.levested; destination.querySelector("img").src = dyr.billede;);
-
-    </script>
-</body>
-
-</html>
-
-<!--
-<!DOCTYPE html>
-<html lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
 </head>
 
 <body>
 
-    <article></article>
 
     <script>
-        document.addEventListener("DOMContentLoaded", start)
-
-        function start() {
-            console.log("DOM er loaded");
-
-        }
-
         let dyr = {
-            "Dyr": "gris",
-            "Type": "pattedyr",
-            "Billede": "http://mabe-kea.dk/E19/pics/pig.png",
-            "Levested": "svinefarme",
-
+            "dyr": "gris",
+            "type": "pattedyr",
+            "billede": "http://mabe-kea.dk/E19/pics/pig.png",
+            "levested": "svinefarme"
         }
-
-        console.log(Dyr: $ {
-            dyr.Dyr
-        }, Type: $ {
-            dyr.Type
-        }, Levested: $ {
-            dyr.Levested
-        })
+        console.log(`dyr:${dyr.dyr} type:${dyr.type} levested: ${dyr.levested}`)
 
     </script>
+
 </body>
 
 </html>
--->

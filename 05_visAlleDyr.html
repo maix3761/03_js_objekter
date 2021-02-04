@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+</head>
+
+<body>
+    <article id="visDyr">
+        <h3></h3>
+        <img src="" alt="">
+        <p id="p1">Type:</p>
+        <p id="p2">Levested:</p>
+
+    </article>
+
+    <script>
+        let dyr = [
+
+            {
+                "dyr": "gris",
+                "type": "pattedyr",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png",
+                "levested": "svinefarme"
+            },
+
+            {
+                "dyr": "frø",
+                "type": "pade",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png",
+                "levested": "sump"
+            },
+
+            {
+                "dyr": "sild",
+                "type": "fisk",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.png",
+                "levested": "hav"
+            },
+
+            {
+                "dyr": "ræv",
+                "type": "pattedyr",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png",
+                "levested": "skov"
+            },
+
+            {
+                "dyr": "krokodille",
+                "type": "krybdyr",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.png",
+                "levested": "flod"
+            }
+        ]
+        console.log(dyr[0].dyr);
+        console.log(dyr[1].dyr);
+        console.log(dyr[2].dyr);
+        console.log(dyr[3].dyr);
+        console.log(dyr[4].dyr);
+
+        console.log(dyr[0].type);
+        console.log(dyr[1].type);
+        console.log(dyr[2].type);
+        console.log(dyr[3].type);
+        console.log(dyr[4].type);
+
+        console.log(dyr[0].billede);
+        console.log(dyr[1].billede);
+        console.log(dyr[2].billede);
+        console.log(dyr[3].billede);
+        console.log(dyr[4].billede);
+
+        console.log(dyr[0].levested);
+        console.log(dyr[1].levested);
+        console.log(dyr[2].levested);
+        console.log(dyr[3].levested);
+        console.log(dyr[4].levested);
+
+        console.log(`dyr:${dyr[0].dyr} type:${dyr[0].type} levested: ${dyr[0].levested}`)
+        console.log(`dyr:${dyr[1].dyr} type:${dyr[1].type} levested: ${dyr[1].levested}`)
+        console.log(`dyr:${dyr[2].dyr} type:${dyr[2].type} levested: ${dyr[2].levested}`)
+        console.log(`dyr:${dyr[3].dyr} type:${dyr[3].type} levested: ${dyr[3].levested}`)
+        console.log(`dyr:${dyr[4].dyr} type:${dyr[4].type} levested: ${dyr[4].levested}`)
+
+        document.addEventListener("DOMContentLoaded", start);
+        console.log("DOM loaded");
+
+        function start() {
+            const listevisning = document.querySelector("#visDyr");
+            dyr.forEach(dyr => {
+                listevisning.innerHTML += `<p>${dyr.dyr} ${dyr.type} ${dyr.levested}</p>`
+            })
+        }
+
+        // document.querySelector("#visDyr");
+        //
+        //            const destination = document.querySelector("#visDyr0");
+        //
+        //            destination.querySelector("h3").textContent = dyr[0].dyr;
+        //            destination.querySelector("#p1").textContent = dyr[0].type;
+        //            destination.querySelector("#p2").textContent = dyr[0].levested;
+        //            destination.querySelector("img").src = dyr[0].billede;
+
+        //
+        // destination.querySelector("h3").textContent = dyr[1].dyr;
+        // destination.querySelector("#p1").textContent = dyr[1].type;
+        // destination.querySelector("#p2").textContent = dyr[1].levested;
+        // destination.querySelector("img").src = dyr[1].billede;
+        //
+        // destination.querySelector("h3").textContent = dyr[2].dyr;
+        // destination.querySelector("#p1").textContent = dyr[2].type;
+        // destination.querySelector("#p2").textContent = dyr[2].levested;
+        // destination.querySelector("img").src = dyr[2].billede;
+        //
+        // destination.querySelector("h3").textContent = dyr[3].dyr;
+        // destination.querySelector("#p1").textContent = dyr[3].type;
+        // destination.querySelector("#p2").textContent = dyr[3].levested;
+        // destination.querySelector("img").src = dyr[3].billede;
+        //
+        // destination.querySelector("h3").textContent = dyr[4].dyr;
+        // destination.querySelector("#p1").textContent = dyr[4].type;
+        // destination.querySelector("#p2").textContent = dyr[4].levested;
+        // destination.querySelector("img").src = dyr[4].billede;
+
+    </script>
+
+</body>
+
+</html>

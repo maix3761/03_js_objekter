@@ -10,14 +10,15 @@
 </head>
 
 <body>
-    <article id="visDyr">
-        <h3></h3>
-        <img src="" alt="">
-        <p id="p1">Type:</p>
-        <p id="p2">Levested:</p>
+    <template>
+        <article id="visDyr">
+            <h3></h3>
+            <img src="" alt="">
+            <p id="p1">Type:</p>
+            <p id="p2">Levested:</p>
 
-    </article>
-
+        </article>
+    </template>
     <script>
         let dyr = [
 
@@ -95,36 +96,6 @@
                 listevisning.innerHTML += `<p>${dyr.dyr} ${dyr.type} ${dyr.levested}</p>`
             })
         }
-
-        // document.querySelector("#visDyr");
-        //
-        //            const destination = document.querySelector("#visDyr0");
-        //
-        //            destination.querySelector("h3").textContent = dyr[0].dyr;
-        //            destination.querySelector("#p1").textContent = dyr[0].type;
-        //            destination.querySelector("#p2").textContent = dyr[0].levested;
-        //            destination.querySelector("img").src = dyr[0].billede;
-
-        //
-        // destination.querySelector("h3").textContent = dyr[1].dyr;
-        // destination.querySelector("#p1").textContent = dyr[1].type;
-        // destination.querySelector("#p2").textContent = dyr[1].levested;
-        // destination.querySelector("img").src = dyr[1].billede;
-        //
-        // destination.querySelector("h3").textContent = dyr[2].dyr;
-        // destination.querySelector("#p1").textContent = dyr[2].type;
-        // destination.querySelector("#p2").textContent = dyr[2].levested;
-        // destination.querySelector("img").src = dyr[2].billede;
-        //
-        // destination.querySelector("h3").textContent = dyr[3].dyr;
-        // destination.querySelector("#p1").textContent = dyr[3].type;
-        // destination.querySelector("#p2").textContent = dyr[3].levested;
-        // destination.querySelector("img").src = dyr[3].billede;
-        //
-        // destination.querySelector("h3").textContent = dyr[4].dyr;
-        // destination.querySelector("#p1").textContent = dyr[4].type;
-        // destination.querySelector("#p2").textContent = dyr[4].levested;
-        // destination.querySelector("img").src = dyr[4].billede;
 
     </script>
 

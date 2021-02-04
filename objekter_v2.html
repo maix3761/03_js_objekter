@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <article id="person">
+
+        <h3></h3>
+        <p></p>
+        <img src="" alt="">
+
+        <section id="liste"></section>
+
+
+    </article>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        const personer = [
+
+            {
+                "fornavn": "Mai Cecilie",
+                "efternavn": "Hansen",
+                "email": "mai@hojly.dk",
+                "billede": "mig.jpg"
+            },
+
+            {
+                "fornavn": "Ane",
+                "efternavn": "Vestermark",
+                "email": "ane@anevestermark.dk",
+                "billede": "mig.jpg"
+            },
+
+            {
+                "fornavn": "Ole",
+                "efternavn": "Hansen",
+                "email": "ole@hojly.dk",
+                "billede": "mig.jpg"
+            }
+        ];
+
+        function start() {
+            const listevisning = document.querySelector("#liste");
+            //løb personliste igennem og indæt  i #liste
+            personer.forEach(person => {
+                        //placer person i HTML
+                        listevisning.innerHTML += `<p>${person.fornavn} ${person.efternavn} ${person.email}<p>
+            })
+        }
+
+    </script>
+</body>
+
+</html>
